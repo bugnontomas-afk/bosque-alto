@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-box($padding: 30px){
+  background: $dark-soft;
+  padding: $padding;
+  border-radius: 12px;
+  border: $border-soft;
+}
+
+@mixin image-cover($height){
+  width: 100%;
+  height: $height;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@mixin hover-up($distance){
+  transition: $transition-fast;
+
+  &:hover{
+    transform: translateY($distance);
+  }
+}

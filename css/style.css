@@ -1,0 +1,259 @@
+
+#111111: #111111;
+#3A5A40: #3A5A40;
+#DAD7CD: #DAD7CD;
+
+body{
+  background-color: #111111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.custom-nav{
+  background: rgba(0,0,0,.7);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand,
+.nav-link{
+  color: white !important;
+}
+
+.hero{
+  height: 100vh;
+  background-image: url('../img/interior.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.hero-content{
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero h1{
+  font-size: 4rem;
+}
+
+.btn-custom{
+  background: #3A5A40;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
+
+.custom-card{
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,.1);
+  padding: 30px;
+  transition: .3s;
+}
+
+.service-card{
+  min-height: 260px;
+  overflow: hidden;
+  justify-content: end;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.service-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.75));
+}
+
+.service-card h3,
+.service-card p{
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.service-card-piscina{
+  background-image: url('../img/piscina.jpg');
+}
+
+.service-card-wifi{
+  background-image: url('../img/wifi.jpg');
+}
+
+.service-card-rio{
+  background-image: url('../img/rio.jpg');
+}
+
+.custom-card:hover{
+  transform: translateY(-10px);
+}
+
+.page-header{
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(58, 90, 64);
+}
+
+.footer{
+  padding: 30px;
+  background: #0b0b0b;
+}
+.contacto-section{
+  color: white;
+}
+
+.contacto-info,
+.contacto-form{
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+}
+
+.contacto-form input,
+.contacto-form textarea{
+  background: #111111;
+  color: white;
+  border: 1px solid rgba(255,255,255,.2);
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder{
+  color: #bdbdbd;
+}
+.galeria-section{
+  color: white;
+}
+
+.galeria-section h2{
+  color: rgb(58, 90, 64);
+}
+
+.galeria-section p{
+  color: rgb(58, 90, 64);
+}
+
+.galeria-card{
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,.1);
+  overflow: hidden;
+  border-radius: 12px;
+  height: 100%;
+  transition: .3s;
+}
+
+.galeria-card:hover{
+  transform: translateY(-8px);
+}
+
+.galeria-card img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.galeria-texto{
+  padding: 20px;
+}
+
+.galeria-texto h3{
+  color: white;
+  font-size: 1.4rem;
+}
+
+.galeria-texto p{
+  color: #DAD7CD;
+}
+.servicios-section{
+  color: rgb(58, 90, 64);
+}
+
+.servicios-section p{
+  color:rgb(58, 90, 60);
+}
+
+.servicio-card{
+  height: 100%;
+  min-height: 190px;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+  transition: .3s;
+}
+
+.servicio-card:hover{
+  transform: translateY(-8px);
+  background: #223529;
+}
+
+.servicio-card h3{
+  color: white;
+  margin-bottom: 15px;
+}
+
+.servicio-card p{
+  color: #DAD7CD;
+}
+.cabanas-section{
+   color: rgb(58, 90, 64);
+}
+
+.cabanas-section p{
+    color: rgb(58, 90, 64);
+
+}
+
+.cabana-card{
+  height: 100%;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.cabana-card:hover{
+  transform: translateY(-8px);
+}
+
+.cabana-card img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.cabana-info{
+  padding: 25px;
+}
+
+.cabana-info h3{
+  color: white;
+}
+
+.cabana-info p,
+.cabana-info li{
+  color: #DAD7CD;
+}
+
+.cabana-info ul{
+  padding-left: 20px;
+  margin-bottom: 20px;
+}

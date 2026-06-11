@@ -1,0 +1,80 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.contacto-section{
+  color: $white;
+}
+
+.contacto-info,
+.contacto-form{
+  @include card-box;
+}
+
+.contacto-form{
+  input,
+  textarea{
+    background: $dark;
+    color: $white;
+    border: $border-input;
+
+    &::placeholder{
+      color: $muted;
+    }
+  }
+}
+
+.galeria-section{
+  color: $white;
+
+  h2,
+  p{
+    color: $green;
+  }
+}
+
+.galeria-texto{
+  padding: 20px;
+
+  h3{
+    color: $white;
+    font-size: 1.4rem;
+  }
+
+  p{
+    color: $light;
+  }
+}
+
+.servicios-section{
+  color: $green;
+
+  p{
+    color: rgb(58, 90, 60);
+  }
+}
+
+.cabanas-section{
+  color: $green;
+
+  p{
+    color: $green;
+  }
+}
+
+.cabana-info{
+  padding: 25px;
+
+  h3{
+    color: $white;
+  }
+
+  p,
+  li{
+    color: $light;
+  }
+
+  ul{
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+}

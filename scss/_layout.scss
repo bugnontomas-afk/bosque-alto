@@ -1,0 +1,44 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.custom-nav{
+  background: rgba(0,0,0,.7);
+  backdrop-filter: blur(10px);
+}
+
+.hero{
+  height: 100vh;
+  background-image: url('../img/interior.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  @include flex-center;
+
+  h1{
+    font-size: 4rem;
+  }
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.hero-content{
+  position: relative;
+  z-index: 2;
+  color: $white;
+}
+
+.page-header{
+  height: 40vh;
+  background: $green;
+  @include flex-center;
+}
+
+.footer{
+  padding: 30px;
+  background: $dark-footer;
+}

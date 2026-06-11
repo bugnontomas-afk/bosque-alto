@@ -1,0 +1,93 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+%dark-card{
+  background: $dark-soft;
+  border: $border-soft;
+}
+
+.custom-card{
+  @extend %dark-card;
+  padding: 30px;
+  transition: $transition-fast;
+
+  &:hover{
+    transform: translateY(-10px);
+  }
+}
+
+.service-card{
+  min-height: 260px;
+  overflow: hidden;
+  justify-content: end;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.75));
+  }
+
+  h3,
+  p{
+    position: relative;
+    z-index: 1;
+    color: $white;
+  }
+}
+
+.service-card-piscina{
+  background-image: url('../img/piscina.jpg');
+}
+
+.service-card-wifi{
+  background-image: url('../img/wifi.jpg');
+}
+
+.service-card-rio{
+  background-image: url('../img/rio.jpg');
+}
+
+.galeria-card,
+.cabana-card{
+  @extend %dark-card;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  @include hover-up(-8px);
+}
+
+.galeria-card{
+  img{
+    @include image-cover(230px);
+  }
+}
+
+.cabana-card{
+  img{
+    @include image-cover(230px);
+  }
+}
+
+.servicio-card{
+  @include card-box;
+  height: 100%;
+  min-height: 190px;
+  @include hover-up(-8px);
+
+  &:hover{
+    background: $green-hover;
+  }
+
+  h3{
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  p{
+    color: $light;
+  }
+}

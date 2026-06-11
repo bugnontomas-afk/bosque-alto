@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+body{
+  background-color: $dark;
+  color: $white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand,
+.nav-link{
+  color: $white !important;
+}
+
+.btn-custom{
+  background: $green;
+  color: $white;
+  padding: 12px 30px;
+  border-radius: 30px;
+}
